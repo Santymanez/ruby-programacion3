@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Ejercicio 4
+  body
+    h1 Ejercicio 4
+    p
+		- cont = 1
+	    - suma = 1
+	    - suma.to_i
+	    - while cont != @numero.to_i
+	      - cont+=1
+	      - suma = suma + cont
+    	= "El resultado es: #{suma}"

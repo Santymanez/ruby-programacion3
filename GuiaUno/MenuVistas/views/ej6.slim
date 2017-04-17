@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title Ejercicio 6
+  body
+    h1 Ejercicio 6
+	p
+      	- lista_ba = []
+		- @list.each do |x|
+			- if x[0..1] == 'ba'
+			  - lista_ba << x
+		= "#{@list}" 
+		= lista_ba[0]

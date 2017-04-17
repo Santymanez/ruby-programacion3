@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Ejercicio 7
+  body
+    h1 Ejercicio 7
+    p
+		- cont = 1
+	    - suma= 1
+	    - suma.to_i
+	    - if @numero.to_i % 3 == 0 || @numero.to_i % 5 == 0
+	      - while cont != @numero.to_i
+	        - cont+=1
+	        - suma = suma + cont
+	      = "El resultado es: #{suma}"
+	    - else
+	      = "El numero ingresado no es multiplo de 3 o 5"

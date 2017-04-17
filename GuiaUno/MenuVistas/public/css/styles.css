@@ -1,0 +1,28 @@
+body {
+	background-color: #bfbfbf;
+}
+
+h1{
+	color: #000080;
+	text-align: center;
+	text-decoration: underline;
+	font: oblique bold 40px cursive
+}
+
+a{
+	color: black;
+	padding:10px 20px;
+	border: 2px solid black;
+	text-decoration:none;
+	background-color: #8c8c8c
+}
+
+a:hover{
+	background-color: black;
+	color: white
+}
+
+p{
+	font-family: "Arial";
+	font-size: 20px
+}

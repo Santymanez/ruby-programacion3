@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Ejercicio 9
+  body
+    h1 Ejercicio 9
+    p
+    	- lista = []
+	    - num_secreto = rand(1..10)
+		- if not lista.include? @num_elegido
+		   - lista << @num_elegido
+		- if @num_elegido.to_i < num_secreto
+		   = "El numero secreto es mayor"
+		- else
+		   - if @num_elegido.to_i > num_secreto
+		    	= "El numero secreto es menor"
+		   - else @num_elegido == num_secreto
+		   		= "El numero elegido es el correcto. Cantidad de intentos realizados: #{lista.size()}"

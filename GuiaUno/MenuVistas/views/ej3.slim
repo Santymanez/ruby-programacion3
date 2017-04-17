@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title Ejercicio 3
+  body
+    h1 Ejercicio 3
+    p
+    	- if @nombre == 'marcelo' || @nombre == 'claudia'
+      	 = "Hola #{@nombre}"
+    	- else
+	       = "Hola"

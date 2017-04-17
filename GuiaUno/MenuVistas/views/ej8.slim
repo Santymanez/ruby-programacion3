@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Ejercicio 8
+  body
+    h1 Ejercicio 8
+    p
+    	- lista = []
+    	- for x in (0..9)
+	      - numero = rand(1..100)
+	      - lista << numero
+
+	    - mayor = 0
+	    - lista.each do |x|
+	      - if x > mayor
+	        - mayor = x
+        = lista
+	    = "El numero mas grande es: #{mayor}"
