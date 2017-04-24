@@ -6,42 +6,64 @@ get '/' do
   slim :index
 end
 
+get '/contacto' do
+  slim :contacto
+end
+
+post '/contacto' do
+  p params[:nombre]
+end
+
 get '/ej1' do
   slim :ej1
 end
 
 get '/ej2' do
-	@nombre = 'marcelo'
 	slim :ej2
 end
 
+post '/ej2' do
+	slim :resp2
+end
+
 get '/ej3' do
-	@nombre = 'santy'
 	slim :ej3
 end
 
+post '/ej3' do
+	slim :resp3
+end
+
 get '/ej4' do
-  @numero = 1
   slim :ej4
 end
 
+post '/ej4' do
+	slim :resp4
+end
+
 get '/ej5' do
-	@list1 = ['rambo', 'ruido', 'ruby']
-	@list2 = ['razon', 'sazon', 'calzon']
-	@list = @list2
   slim :ej5
 end
 
+post '/ej5' do
+	slim :resp5
+end
+
 get '/ej6' do
-	@list1 = ['anana', 'banana', 'manzana']
-    @list2 = ['anana', 'banana', 'balanza']
-    @list = @list2
 	slim :ej6
 end
 
+post '/ej6' do
+	slim :resp6
+end
+
 get '/ej7' do
-	@numero = 25
 	slim :ej7
+end
+
+post '/ej7' do
+	slim :resp7
 end
 
 get '/ej8' do
@@ -49,6 +71,9 @@ get '/ej8' do
 end
 
 get '/ej9' do
-  @num_elegido = 4
   slim :ej9
+end
+
+post '/ej9' do
+	slim :resp9
 end

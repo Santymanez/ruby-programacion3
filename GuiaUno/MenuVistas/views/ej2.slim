@@ -4,5 +4,10 @@ html
     title Ejercicio 2
   body
     h1 Ejercicio 2
-    p 
-    	="Hola #{@nombre}"
+    form action="/ej2" method="post"
+    	p
+    		label Ingrese nombre:
+  		p
+  			input name="nombre"
+			p
+				input type="submit"
