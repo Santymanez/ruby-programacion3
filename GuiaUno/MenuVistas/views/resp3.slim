@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title Ejercicio 3
+  body
+    h1 Resolucion Ejercicio 3
+    p
+			- if params[:nombre] == 'marcelo' || params[:nombre] == 'claudia'
+				| Hola #{@params[:nombre]}
+			- else
+				| Hola

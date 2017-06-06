@@ -1,0 +1,30 @@
+h4 class="center align"
+  | ToDo Personal
+div class="col s3"
+  div class="cols12"
+    span class="center align"
+      | Modifique tarea
+  form class="col s12" action="/editar/#{@tarea.id}" method="post"
+    div class="row"
+      div class="input-field"
+        input id="tit" value="#{@tarea.titulo}" type="text" name="titulo" class="validate" required="true"
+        label for="tit" data-error="Ingrese nombre para la tarea" data-success="Correcto"
+          | Titulo
+      div class="input-field"
+        textarea id="cue" value="#{@tarea.cuerpo.to_s}" name="cuerpo" class="materialize-textarea validate" required="true"
+        label for="cue" data-error="Ingrese cuerpo para la tarea" data-success="Correcto"
+          | Cuerpo
+      div class="input-field"
+        input placeholder="Fecha de Vencimiento" value="#{@tarea.fechavencimiento}" id="vencimiento" type="date" name="fechavencimiento" class="validate datepicker" required="true"
+        | Fecha de Vencimiento
+      / div class="input-field"
+      /   input type="checkbox" id="yes"
+      /   label for="yes"Si
+      /   input type="checkbox" id="no"
+      /   label for="no"No
+    div class="row"
+      div class="input-field"
+        button class="btn waves-effect waves-light" type="submit" name="action"
+          | Agregar
+          i class="material-icons right"
+  | #{@tarea.cuerpo}

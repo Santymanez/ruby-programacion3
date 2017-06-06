@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Ejercicio 6
+  body
+    h1 Resolucion Ejercicio 6
+    p
+			- if params[:lista] == "1"
+				- list = ['anana', 'banana', 'manzana']
+			- else
+					- if params[:lista] == "2"
+						- list = ['anana', 'banana', 'balanza']
+			- lista_ba = []
+			- list.each do |x|
+				- if x[0..1] == 'ba'
+					- lista_ba << x
+			| #{list}
+			p
+				| La primera palabra que empieza con "Ba" es: #{lista_ba[0]}

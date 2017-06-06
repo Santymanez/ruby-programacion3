@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Ejercicio 5
+  body
+    h1 Resolucion Ejercicio 5
+    p
+			- if params[:lista] == "1"
+				- list = ['rambo', 'ruido', 'ruby']
+			- else
+				- if params[:lista] == "2"
+					- list = ['razon', 'sazon', 'calzon']
+			- respuesta = 0
+			- list.each do |x|
+				- if x[0] != 'r'
+					- respuesta = false
+			- if respuesta == false
+				| #{list}
+				p
+					| No todos empiezan con R
+			- else
+				| #{list}
+				p
+					| Todos empiezan con R
