@@ -11,7 +11,7 @@ div class="col s3"
         label for="tit" data-error="Ingrese nombre para la tarea" data-success="Correcto"
           | Titulo
       div class="input-field"
-        textarea id="cue" value="#{@tarea.cuerpo.to_s}" name="cuerpo" class="materialize-textarea validate" required="true"
+        textarea id="cue" value="#{@tarea.cuerpo}" name="cuerpo" class="materialize-textarea validate" required="true"
         label for="cue" data-error="Ingrese cuerpo para la tarea" data-success="Correcto"
           | Cuerpo
       div class="input-field"
